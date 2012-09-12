@@ -10,6 +10,7 @@
 #
 
 class User < ActiveRecord::Base 
+  self.per_page = 10
   attr_accessible :name, :email, :password, :password_confirmation
   has_secure_password
 
